@@ -87,32 +87,32 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔗 Webhook Sender</h1>
+    <h1>gay sex webhook</h1>
 
-    <label for="webhookUrl">Webhook URL</label>
+    <label for="webhookUrl">gay webhook here</label>
     <input type="text" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." />
 
-    <label for="username">Username (optional)</label>
-    <input type="text" id="username" placeholder="Bot name" />
+    <label for="username">wh name</label>
+    <input type="text" id="username" placeholder="bot name" />
 
-    <label for="avatarUrl">Avatar URL (optional)</label>
+    <label for="avatarUrl">wh pfp</label>
     <input type="text" id="avatarUrl" placeholder="https://..." />
 
-    <label for="messageContent">Message</label>
-    <textarea id="messageContent" rows="4" placeholder="Your message here..."></textarea>
+    <label for="messageContent">very cool message here</label>
+    <textarea id="messageContent" rows="4" placeholder="ur message here..."></textarea>
 
     <div class="row">
-      <input type="number" id="cooldown" step="0.1" value="1" min="0.1" placeholder="Cooldown in seconds" />
-      <button id="loopButton" class="loopBtn start" onclick="toggleLoop()">Start Loop</button>
-    </div>
+      <input type="number" id="cooldown" step="0.1" value="1" min="0.1" placeholder="cooldown in seconds" />
+      <button id="loopButton" class="loopBtn start" onclick="toggleLoop()">start loop</button>
+    </div>nya 
 
     <div class="row">
-      <button onclick="sendWebhook()">Send Once</button>
-      <button onclick="clearLog()">Clear Log</button>
+      <button onclick="sendWebhook()">send once</button>
+      <button onclick="clearLog()">clear ip log</button>
     </div>
 
     <div class="log" id="log"></div>
-    <div class="status" id="status">Status: Idle</div>
+    <div class="status" id="status">status: Idle</div>
   </div>
 
   <script>
@@ -130,7 +130,7 @@
     }
 
     function updateStatus(text) {
-      document.getElementById("status").textContent = "Status: " + text;
+      document.getElementById("status").textContent = "status: " + text;
     }
 
     function sendWebhook() {
@@ -140,7 +140,7 @@
       const avatarUrl = document.getElementById("avatarUrl").value;
 
       if (!url || !content) {
-        alert("Webhook URL and message are required.");
+        alert("webhook URL and message are required.");
         return;
       }
 
@@ -192,7 +192,7 @@
         sendWebhook();
       }, delay * 1000);
 
-      btn.textContent = "Stop Loop";
+      btn.textContent = "stop!! Loop";
       btn.classList.remove("start");
       btn.classList.add("stop");
       updateStatus(`Looping every ${delay}s`);
